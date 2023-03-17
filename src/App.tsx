@@ -2,10 +2,14 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.scss';
 import Button, { ButtonType, ButtonSize } from './components/Button/button';
+import Input from './components/Input/input';
 
 const App: React.FC = () => {
   return (
     <div className="App">
+      <Input disable />
+      <Input />
+      <Input size='lg'/>
       <Button disable>Hello</Button>
       <Button 
         btnType={ButtonType.Primary}

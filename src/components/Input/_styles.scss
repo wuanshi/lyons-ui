@@ -1,0 +1,53 @@
+input:disabled {
+  cursor: not-allowed;
+}
+
+.viking-input-wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  .icon-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 35px;
+    justify-content: center;
+    color: $input-color;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    svg {
+      color: $input-placeholder-color;
+    }
+  }
+}
+
+.viking-input-group-prepend,
+.viking-input-group-append {
+  display: flex;
+  align-items: center;
+  padding: $input-padding-y $input-padding-x;
+  margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
+  font-size: $input-font-size; // Match inputs
+  font-weight: $font-weight-normal;
+  line-height: $input-line-height;
+  color: $input-group-addon-color;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $input-group-addon-bg;
+  border: $input-border-width solid $input-group-addon-border-color;
+  border-radius: $input-border-radius;
+}
+
+.input-size-sm .viking-input-inner {
+  padding: $input-padding-y-sm $input-padding-x-sm;
+  font-size: $input-font-size-sm;
+  border-radius: $input-border-radius-sm;
+}
+
+.input-size-lg .viking-input-inner {
+  padding: $input-padding-y-lg $input-padding-x-lg;
+  font-size: $input-font-size-lg;
+  border-radius: $input-border-radius-lg;
+}
