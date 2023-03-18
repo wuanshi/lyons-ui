@@ -10,12 +10,19 @@ const App: React.FC = () => {
       <Input disable />
       <Input />
       <Input size='lg'/>
-      <Button disable>Hello</Button>
+      <Button>Default</Button>
+      <Button btnType={ButtonType.Primary} disable>Hello</Button>
       <Button 
         btnType={ButtonType.Primary}
         size={ButtonSize.Large}
       >
         Hello
+      </Button>
+      <Button btnType={ButtonType.Primary}>
+        Primary
+      </Button>
+      <Button btnType={ButtonType.Danger}>
+        Danger
       </Button>
       <Button 
         btnType={ButtonType.Link} 
